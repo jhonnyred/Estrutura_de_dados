@@ -14,7 +14,7 @@ public class Arvre {
     public void adicionar(No raizTmp, int info){
 
         if(info == raizTmp.info){
-            System.out.println(info + " ja é a raiz desta arvore");
+            raizTmp.esquerdo = new No(info);
 
         }else if(info < raizTmp.info){
             if(raizTmp.esquerdo == null){
@@ -38,28 +38,44 @@ public class Arvre {
     }
 
     public int buscaNo(No raizTmp, int info){
-        int profundidade = 1;
+        int nivel = 1;
 
         if(info == raizTmp.info){
-            return profundidade;
+            return nivel;
         
         }else if(info > raizTmp.info){    
             if (raizTmp.direito == null){
-                profundidade = -1;
-                return profundidade;
+                nivel = -1;
+                return nivel;
             }else if(buscaNo(raizTmp.direito, info) != -1){
-                return profundidade + buscaNo(raizTmp.direito, info);
+                return nivel + buscaNo(raizTmp.direito, info);
             }
 
         }else if(info < raizTmp.info){
             if(raizTmp.esquerdo == null){
-                profundidade = -1;
-                return profundidade;
+                nivel = -1;
+                return nivel;
             }else if(buscaNo(raizTmp.esquerdo, info) != -1){
-                return profundidade + buscaNo(raizTmp.esquerdo, info);
+                return nivel + buscaNo(raizTmp.esquerdo, info);
             }
         }
 
         return -1;
     }
+
+    // Printa Nós
+    public int printar(No raizTmp){
+        int nivel = 1;
+        System.out.println("No: " +raizTmp.info+ "Nivel: " +nivel);
+
+        if(raizTmp.direito != null){
+            return nivel + printar(raizTmp.direito);
+        }else if(raizTmp.esquerdo != null){
+        }else{
+
+        }
+        
+    }
+
+
 }
