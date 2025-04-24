@@ -67,7 +67,25 @@ public class Arvre {
     }
 
     // // Printa Nós
-    public int printar(No raizTmp){
-           
+    public void preOrdem(){
+        preOrdem(this.raiz);
     }
+
+    private void preOrdem(No raizTmp){
+        if(raiz != null){
+            System.out.println(raizTmp.info);
+
+            if(raizTmp.esquerdo != null){
+                preOrdem(raizTmp.esquerdo);
+            }
+
+            if(raizTmp.direito != null){
+                preOrdem(raizTmp.direito);
+            }
+        }
+    }
+
+    // Remover
+
+
 }
