@@ -35,21 +35,26 @@ public class Arvre {
         }
     }
 
-    // Busca Nó 
+    // Busca Nó
     public int buscaNo(int info){
         return buscaNo(this.raiz, info);
     }
 
-    private int buscaNo(No raizTmp, int info){
-        int nivel = 1;
+    // if (direita = null && esquerda = null){
+    //     return nivel
+    // }else if(esquerda != null){
+    //     calculanivel(esquerda, nivel)
+    // }
 
-        if(info == raizTmp.info){
+    private int buscaNo(No raizTmp, int info, int niveltmp){
+        int nivel = 0;
+
+        if(info.esquerdo == null && info.direito == null){
             return nivel;
         
         }else if(info > raizTmp.info){    
-            if (raizTmp.direito == null){
-                nivel = -1;
-                return nivel;
+            if (raizTmp.direito != null){
+                return n
             }else if(buscaNo(raizTmp.direito, info) != -1){
                 return nivel + buscaNo(raizTmp.direito, info);
             }
