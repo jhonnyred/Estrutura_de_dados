@@ -10,9 +10,10 @@ public class Arvre {
         adicionar(this.raiz, info);
     }
 
-    public void adicionar(No raizTmp, int info){
+    private void adicionar(No raizTmp, int info){
         if(raizTmp == null){
-            this.raiz = raizTmp;
+            this.raiz = new No(info);
+
         }else{
             if(info == raizTmp.info){
                 raizTmp.esquerdo = new No(info);
@@ -39,7 +40,7 @@ public class Arvre {
         return buscaNo(this.raiz, info);
     }
 
-    public int buscaNo(No raizTmp, int info){
+    private int buscaNo(No raizTmp, int info){
         int nivel = 1;
 
         if(info == raizTmp.info){
@@ -65,19 +66,8 @@ public class Arvre {
         return -1;
     }
 
-    // Printa Nós
+    // // Printa Nós
     public int printar(No raizTmp){
-        int nivel = 1;
-        System.out.println("No: " +raizTmp.info+ "Nivel: " +nivel);
-
-        if(raizTmp.direito != null){
-            return nivel + printar(raizTmp.direito);
-        }else if(raizTmp.esquerdo != null){
-        }else{
-
-        }
-        
+           
     }
-
-
 }
