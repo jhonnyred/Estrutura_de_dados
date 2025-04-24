@@ -2,8 +2,7 @@ public class Arvre {
     No raiz;
 
     // CONSTRUTOR
-    public Arvre(int info){
-        this.raiz.info = info;
+    public Arvre(){
     }
 
     // Adicionar
