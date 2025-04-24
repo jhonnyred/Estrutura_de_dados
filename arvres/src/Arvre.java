@@ -1,33 +1,36 @@
 public class Arvre {
-    No raiz = new No();
+    No raiz;
 
     // CONSTRUTOR
     public Arvre(int info){
         this.raiz.info = info;
     }
 
-    // Busca um no filho que seja null
+    // Adicionar
     public void adicionar(int info){
         adicionar(this.raiz, info);
     }
 
     public void adicionar(No raizTmp, int info){
-
-        if(info == raizTmp.info){
-            raizTmp.esquerdo = new No(info);
-
-        }else if(info < raizTmp.info){
-            if(raizTmp.esquerdo == null){
+        if(raizTmp == null){
+            this.raiz = raizTmp;
+        }else{
+            if(info == raizTmp.info){
                 raizTmp.esquerdo = new No(info);
-            }else{
-                adicionar(raizTmp.esquerdo, info);
-            }
-            
-        }else {
-            if(raizTmp.direito == null){
-                raizTmp.direito = new No(info);
-            }else{
-                adicionar(raizTmp.direito, info);
+    
+            }else if(info < raizTmp.info){
+                if(raizTmp.esquerdo == null){
+                    raizTmp.esquerdo = new No(info);
+                }else{
+                    adicionar(raizTmp.esquerdo, info);
+                }
+                
+            }else {
+                if(raizTmp.direito == null){
+                    raizTmp.direito = new No(info);
+                }else{
+                    adicionar(raizTmp.direito, info);
+                }
             }
         }
     }
