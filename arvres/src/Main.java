@@ -1,9 +1,9 @@
-public class main{
+public class Main{
    public static void main(String[] args){
     Arvre minhaArvore = new Arvre();
 
     // ADICIONANDO NÓS
-    minharArvora.adicionar(0);
+    minhaArvore.adicionar(0);
     minhaArvore.adicionar(4);
     minhaArvore.adicionar(-2);
     minhaArvore.adicionar(-3);
@@ -32,6 +32,12 @@ public class main{
     System.out.println(" info: 12 numero de nivel: "+ minhaArvore.buscaNo(12));
 
 
-    // 
+    // PRINTA ÁRVORE
+    minhaArvore.preOrdem();
+
+    // REMOVER NÓ
+    System.out.println(minhaArvore.remover(0));
+
+    minhaArvore.preOrdem();
     } 
 }
