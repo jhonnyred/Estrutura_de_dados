@@ -89,6 +89,30 @@ public class Arvre {
         }
     }
 
+    public void emOrdem(){
+        emOrdem(this.raiz);
+    }
+
+    private void emOrdem(No raizTmp){
+        if(raiz != null){
+            emOrdem(raizTmp.esquerdo);
+            System.out.println(raizTmp.info);
+            emOrdem(raizTmp.direito);
+        }
+    }
+
+    public void posOrdem(){
+        posOrdem(this.raiz);
+    }
+
+    private void posOrdem(No raizTmp){
+        if(raiz != null){
+            posOrdem(raizTmp.direito);
+            System.out.println(raizTmp.info);
+            posOrdem(raizTmp.esquerdo);
+        }
+    }
+
     // Remover
     public String remover(int info){
         return remover(this.raiz, info, 0);
