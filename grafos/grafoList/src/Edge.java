@@ -12,4 +12,9 @@ public class Edge{
         this.destiny = destiny;
         this.info = info;
     }
+
+    public Edge(Vertex destiny, int info){
+        this.destiny = destiny;
+        this.info = info;
+    }
 }
