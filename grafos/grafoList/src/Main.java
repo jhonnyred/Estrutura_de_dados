@@ -12,7 +12,16 @@ public class Main {
         myGraph.addVertex(4);
         myGraph.addVertex(5);
 
+        myGraph.addEdge(0, 1, "A");
+        myGraph.addEdge(0, 5, "B");
+        myGraph.addEdge(1, 0, "A");
+        myGraph.addEdge(1, 5, "B");
+        myGraph.addEdge(2, 3, "A");
+        myGraph.addEdge(2, 4, "B");
+        myGraph.addEdge(3, 2, "A");
+        myGraph.addEdge(3, 4, "B");
+        myGraph.addEdge(3, 5, "C");
 
-        myGraph.addEdge(0,0,5, 3);
+        myGraph.print();
     }
 }

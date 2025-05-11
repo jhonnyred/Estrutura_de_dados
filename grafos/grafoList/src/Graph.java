@@ -2,7 +2,7 @@ package grafoList.src;
 
 import java.util.ArrayList;
 
-public class Graph {
+public class Graph{
     // ATRIBUTE
     private ArrayList<Vertex> vertexList = new ArrayList<Vertex>();
 
@@ -12,38 +12,50 @@ public class Graph {
 
     // METHODS
     public void addVertex(int info){
+        boolean check = true;
         for(Vertex element : this.vertexList){
-            if(info == element.info){
+            if(info == element.getInfo()){
                 System.out.println("this vertex already exists");
-                break;
-    
-            }else{
-                Vertex vertexTmp = new Vertex(info);
-                vertexList.add(vertexTmp);
+                check = false;
                 break;
             }
         }
-        
-    }
-
-    public void addEdge(Vertex vertex, Vertex origin, Vertex destiny, int info){
-        boolean check = false;
-        int index = -1;
-
-        for(Vertex element : this.vertexList){
-            if (element == vertex){
-                check = true;
-                index = vertexList.indexOf(element);
-                break;
-            }
-        }
-
 
         if(check){
-            Vertex vertexTmp = vertexList.get(index);
-            vertexTmp.addEdge(origin, destiny, info); 
-        }else{
+            Vertex vertexTmp = new Vertex(info);
+            vertexList.add(vertexTmp);
+        }
+    }
+
+    public void addEdge(int origin, int destiny, String info){
+        boolean check = false; 
+
+        for(Vertex element : this.vertexList){
+            if (element.getInfo() == origin){
+                element.addEdge(this.vertexList, origin, destiny, info);
+                check = true;
+                break;
+            }
+        }
+
+        if(!check){
             System.out.println("vertex not found");
         }
     }
+
+    public void print(){
+        for(Vertex vertex : this.vertexList){
+            System.out.println(vertex.getInfo() + " : ");
+
+            for(Edge edge : vertex.getEdgeList()){
+                System.out.println("Edge:" +edge.getInfo()+ " origin:" +edge.getOrigin()+ " destiny:" +edge.getDestiny());
+            }
+        }
+    }
+
+    // GETTERS
+    public ArrayList<Vertex> getVertexList(){ return this.vertexList; }
+
+    // SETTERS
+    public void setVertexList(ArrayList<Vertex> list){ this.vertexList = list; }
 }

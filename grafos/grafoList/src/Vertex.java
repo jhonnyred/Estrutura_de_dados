@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Vertex{
     // ATRIBUTES
-    ArrayList<Edge> edgeList = new ArrayList<Edge>();
-    int info;
+    private ArrayList<Edge> edgeList = new ArrayList<Edge>();
+    private int info;
 
     // CONSTRUCTOR
     public Vertex(int info){
@@ -13,15 +13,16 @@ public class Vertex{
     }
 
     // METHODS
-    public void addEdge(Vertex origin, Vertex destiny, int info){
-        Edge edgeTemp = new Edge(origin, destiny, info);
-
-        edgeList.add(edgeTemp);
+    public void addEdge(ArrayList<Vertex> graph, int origin, int destiny, String info){
+        edgeList.add(new Edge(graph, origin, destiny, info));
     }
 
-    public void addEdge(Vertex destiny, int info){
-        Edge edgeTemp = new Edge(destiny, info);
-
-        edgeList.add(edgeTemp);
+    // GETTERS
+    public int getInfo(){
+        return this.info;
     }
+
+    public ArrayList<Edge> getEdgeList(){ return this.edgeList; }
+
+    public void setEdgeList(ArrayList<Edge> list){ this.edgeList = list; }
 }
