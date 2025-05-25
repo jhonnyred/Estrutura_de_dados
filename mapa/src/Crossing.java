@@ -7,12 +7,13 @@ public class Crossing {
     // ATRIBUTES
     private ArrayList<Road> roadList = new ArrayList<Road>();
     private int number;
-    private int coordinate;
+    private int[] coordinate = new int[2];
 
     //CONSTRUCTOR
-    public Crossing(int number, int coordinate){
+    public Crossing(int number, int xaxis, int yaxis){
         this.number = number;
-        this.coordinate = coordinate;
+        this.coordinate[0] = xaxis;
+        this.coordinate[1] = yaxis;
     }
 
     // METHODS
