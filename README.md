@@ -17,9 +17,9 @@ Basicamente a porta de entrada para estrutura de dados. Aqui existem conheciment
 #### Pilha
     - pilha []
     - indice
-    * empilhar
-    * desempilhar
-    * pilhaVazia
-    * pilhaCheia
+* empilhar
+* desempilhar
+* pilhaVazia
+* pilhaCheia
     #### Testepilha
 
