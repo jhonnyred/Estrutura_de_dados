@@ -15,11 +15,11 @@ Basicamente a porta de entrada para estrutura de dados. Aqui existem conheciment
 #### Balanceamento
 * validaBalanceamento 
 #### Pilha
-    - pilha []
-    - indice
-* empilhar
-* desempilhar
-* pilhaVazia
-* pilhaCheia
-    #### Testepilha
-
+- pilha []
+- indice
+    * empilhar
+    * desempilhar
+    * pilhaVazia
+    * pilhaCheia
+#### Testepilha
+- 
