@@ -100,9 +100,12 @@ The idea behind this exercise was basically making a Genius game, but, for some 
 ### 📁 lista_ligada
 Some exercises about linked list. At first kinda difficult to get the node class and its functionally, but very awesome to learn as well.
 #### Listaligada
+   * adicionar
+   * get (it should be getIndice)
+   * buscaNo
 #### No
+   * (only constructor)
 #### Main
-
 
 ### 📁 pilhas
  Basically the entry point to data structures. Here you’ll find basic knowledge about stacks and an extra balancing exercise using stack concepts.
