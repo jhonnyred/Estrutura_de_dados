@@ -12,7 +12,7 @@ This repository was used to store and version the code from my Data Structures c
 ## Description
 Below is a brief description of each exercise (folder), its classes and respective methods.
 ### arvres
-My studies on binary trees and some challenges proposed by the professor.
+My studies on binary trees and some challenges proposed by the professor. This was the second best part of this semester, knowing HOW to build and WHY, binaries trees was a very fun topic to learn as well, really enjoyed writing those classes and making them to work.  
 #### 📁 Arvre
    * adicionar
    * buscaNo
@@ -31,7 +31,7 @@ A quick demostration on searchs methods.
    * Binary
 
 ### 📁 exercicio
-Some exercises assigned by the professor to strengthen certain concepts.
+In this exercises we used our knowledge on stacks and queue, the main class in this folder is GerenciadorTarefas (TaskManager) where we had to build up a TaskManager from scratch using 3 types of stacks and queues. I remember being very challenging at first, but as soon I got the logic it was very easy and funny to write those scripts.  
 ("vazia" = empty; "adicionar" = add; "remover" = remove; "tamanho" = size)
 #### GerenciadorTarefas
    * addTaskPrioritaria
@@ -67,6 +67,39 @@ Some exercises assigned by the professor to strengthen certain concepts.
 #### Main
 
 ### 📁 grafos
+Here are some studies about graph, for me the best part of this semester, i learned a lot about graphs, its functions and how it works. It was really exciting and building those scripts gave me so much joy. 
+#### 📁 grafoAMG
+Graph using Matrix representation.
+#### Grafoamg
+  * add
+#### 📁 grafoList
+Stardard graph concept.
+#### Graph
+  * addVertex
+  * addEdge
+  * print
+  * getVertexList
+  * setVertexList
+#### Edge
+  * getInfo
+  * getOrigin
+  * getDestiny
+  * setInfo
+#### Vertex
+  * addEdge
+  * getInfo
+  * getEdgeList
+  * setEdgeList
+#### Main
+
+### 📁 jogo_memoria
+The idea behind this exercise was basically making a Genius game, but, for some reason, this GUI only works on Eclipse, so i couldn't deliver this code (used VS code). But code is about failing until you succeed, maybe one day I get it done. 
+#### MemoriaGUI
+#### Main
+
+### 📁 lista_ligada
+Some exercises about linked list.
+#### Listaligada
 
 
 ### 📁 pilhas
