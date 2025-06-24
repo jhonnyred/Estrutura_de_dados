@@ -13,11 +13,46 @@ A seguir uma breve descrição de cada exercício (pasta), suas classes e seus r
 ### pilhas
 Basicamente a porta de entrada para estrutura de dados. Aqui existem conhecimentos básicos em pilha e um exercício extra de balanceamento usando os conhecimentos acerca de pilhas.
 #### Balanceamento
-    * validaBalanceamento 
+        public static boolean validaBalanceamento(String texto){
+        Pilha pilha = new Pilha(texto.length());
+        
+        for(int i=texto.length(); i>=0; i--){
+            char simbolo = texto.charAt(i);
+            switch(simbolo){
+                case '(':
+                   pilha.empilhar('(');
+                   break;
+                
+                case '[':
+                   pilha.empilhar('[');
+                   break;
+
+                case '{':
+                   pilha.empilhar('{');
+                   break;
+
+                case ')':
+                   pilha.empilhar(')');
+                   break;
+
+                case ']':
+                   pilha.empilhar(']');
+                   break;
+                
+                case '}':
+                   pilha.empilhar('}');
+                   break;
+            }
+
+            
+        }
+
+        return false;
+    }
 #### Pilha
-    * empilhar
-    * desempilhar
-    * pilhaVazia
-    * pilhaCheia
+   * empilhar
+   * desempilhar
+   * pilhaVazia
+   * pilhaCheia
 #### Testepilha
 (essa é a classe main na verdade, seu nome é devido a orientações do professor)
