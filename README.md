@@ -16,9 +16,9 @@ Below is some considerations and some briefs descriptions of each
    * and respective methods.
 
 
-### arvres
+### 📁 arvres
 My studies on binary trees and some challenges proposed by the professor. This was the second best part of this semester, knowing HOW to build and WHY, binaries trees was a very fun topic to learn as well, really enjoyed writing those classes and making them to work.  
-#### 📁 Arvre
+#### Arvre
    * adicionar
    * buscaNo
    * preOrdem
