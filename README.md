@@ -10,7 +10,12 @@ This repository was used to store and version the code from my Data Structures c
 
 
 ## Description
-Below is some considerations and some briefs descriptions of each exercise (folder), its classes and respective methods.
+Below is some considerations and some briefs descriptions of each 
+### 📁exercise (folder)
+#### its classes 
+   * and respective methods.
+
+
 ### arvres
 My studies on binary trees and some challenges proposed by the professor. This was the second best part of this semester, knowing HOW to build and WHY, binaries trees was a very fun topic to learn as well, really enjoyed writing those classes and making them to work.  
 #### 📁 Arvre
