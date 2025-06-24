@@ -1,17 +1,33 @@
 # 🧱 Estrutura de Dados 
+(Data Strcuture)
 
-Esse é um repositório que utilizei para armazenar e versar os códigos em minhas aulas de Estrutura de Dados, nestes scripts estão alguns dos meus conhecimentos acerca de estrutura de dados (ferramentas, estudos, estruturações...). 
+This repository was used to store and version the code from my Data Structures classes. These scripts contain some of my knowledge about data structures (tools, studies, implementations...). 
 
-## ⚒️ Ferramentas
+## ⚒️ Tools
 * ☕ Java
 * 🆚 Visual Studio Code
 * 🐧 WSL (Linux)
 
 
-## Descrição
-A seguir uma breve descrição de cada exercício (pasta), suas classes e seus respectivos métodos.
+## Description
+Below is a brief description of each exercise (folder), its classes and respective methods.
+### arvres
+My studies on binary trees and some challenges proposed by the professor.
+#### Arvre
+   * adicionar
+   * buscaNo
+   * preOrdem
+   * emOrdem
+   * posOrdem
+   * remover
+####No
+     (only constructor)
+####Main
+
+### buscas
+
 ### pilhas
-Basicamente a porta de entrada para estrutura de dados. Aqui existem conhecimentos básicos em pilha e um exercício extra de balanceamento usando os conhecimentos acerca de pilhas.
+ Basically the entry point to data structures. Here you’ll find basic knowledge about stacks and an extra balancing exercise using stack concepts.
 #### Balanceamento
    * validaBalanceamento
 #### Pilha
@@ -20,4 +36,4 @@ Basicamente a porta de entrada para estrutura de dados. Aqui existem conheciment
    * pilhaVazia
    * pilhaCheia
 #### Testepilha
-(essa é a classe main na verdade, seu nome é devido a orientações do professor)
+(actually, this is the main class, its name follows the professor’s guidelines)
