@@ -50,8 +50,21 @@ Basicamente a porta de entrada para estrutura de dados. Aqui existem conheciment
         return false;
     }
 #### Pilha
-   * empilhar
-   * desempilhar
+        public void empilhar(int valor){
+        if (!pilhaCheia()){
+            pilha[indice] = valor;
+            indice++;
+        }
+    }
+
+        public int desempilhar(){
+        if(!pilhaVazia()){
+            indice--;
+            return pilha[indice];
+        }else{
+            return -1;
+        }
+    }
    * pilhaVazia
    * pilhaCheia
 #### Testepilha
