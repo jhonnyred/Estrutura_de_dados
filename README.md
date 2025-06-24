@@ -25,9 +25,9 @@ My studies on binary trees and some challenges proposed by the professor. This w
    * emOrdem
    * posOrdem
    * remover
-####No
-     (only constructor)
-####Main
+#### No
+  (only constructor)
+#### Main
 
 ### 📁 buscas
 A quick demostration on searchs methods.
