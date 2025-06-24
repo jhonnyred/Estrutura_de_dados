@@ -1,7 +1,7 @@
 # 🧱 Estrutura de Dados 
 (Data Strcuture)
 
-This repository was used to store and version the code from my Data Structures classes. These scripts contain some of my knowledge about data structures (tools, studies, implementations...). 
+This repository was used to store and version the code from my Data Structures classes. These scripts contain some of my knowledge about data structures (tools, studies, implementations...) and some personal considerations about those learnings (most part is coded in portuguese, so most of the methods and classes are written in portuguese). 
 
 ## ⚒️ Tools
 * ☕ Java
@@ -10,7 +10,7 @@ This repository was used to store and version the code from my Data Structures c
 
 
 ## Description
-Below is a brief description of each exercise (folder), its classes and respective methods.
+Below is some considerations and some briefs descriptions of each exercise (folder), its classes and respective methods.
 ### arvres
 My studies on binary trees and some challenges proposed by the professor. This was the second best part of this semester, knowing HOW to build and WHY, binaries trees was a very fun topic to learn as well, really enjoyed writing those classes and making them to work.  
 #### 📁 Arvre
@@ -98,8 +98,10 @@ The idea behind this exercise was basically making a Genius game, but, for some 
 #### Main
 
 ### 📁 lista_ligada
-Some exercises about linked list.
+Some exercises about linked list. At first kinda difficult to get the node class and its functionally, but very awesome to learn as well.
 #### Listaligada
+#### No
+#### Main
 
 
 ### 📁 pilhas
