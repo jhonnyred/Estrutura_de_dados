@@ -10,7 +10,7 @@ This repository was used to store and version the code from my Data Structures c
 
 
 ## Description
-Below is some considerations and some briefs descriptions of each 
+Below are some considerations and some briefs descriptions of each 
 ### 📁exercise (folder)
 #### it's classes 
    * and respective methods.
